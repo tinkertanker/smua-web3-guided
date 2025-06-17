@@ -1,15 +1,15 @@
 CREATE TABLE trips (
-  `trip_id` INTEGER,
-  `duration` INTEGER,
-  `start_date` DATETIME,
-  `start_station` VARCHAR(45),
-  `start_terminal` INTEGER,
-  `end_date` DATETIME,
-  `end_station` VARCHAR(45),
-  `end_terminal` INTEGER,
-  `bike_id` INTEGER,
-  `subscriber_type` VARCHAR(10),
-  `zip_code` VARCHAR(10)
+  trip_id INTEGER,
+  duration INTEGER,
+  start_date TIMESTAMP,
+  start_station VARCHAR(45),
+  start_terminal INTEGER,
+  end_date TIMESTAMP,
+  end_station VARCHAR(45),
+  end_terminal INTEGER,
+  bike_id INTEGER,
+  subscriber_type VARCHAR(10),
+  zip_code VARCHAR(10)
 );
 
 INSERT INTO trips

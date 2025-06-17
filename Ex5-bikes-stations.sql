@@ -1,11 +1,11 @@
 CREATE TABLE stations (
-  `station_id` INTEGER,
-  `name` VARCHAR(45),
-  `lat` FLOAT,
-  `longit` FLOAT,
-  `dockcount` INTEGER,
-  `city` VARCHAR(13),
-  `installation` TIMESTAMP
+  station_id INTEGER PRIMARY KEY,
+  name VARCHAR(45),
+  lat REAL,
+  longit REAL,
+  dockcount INTEGER,
+  city VARCHAR(13),
+  installation TIMESTAMP
 );
 
 INSERT INTO stations

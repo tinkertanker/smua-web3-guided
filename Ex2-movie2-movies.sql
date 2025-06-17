@@ -1,9 +1,11 @@
-CREATE TABLE movies(
-    movie_id INT PRIMARY KEY AUTO_INCREMENT,
+CREATE TABLE movies (
+    movie_id SERIAL PRIMARY KEY,
     movie_name VARCHAR(30)
 );
-INSERT INTO movies VALUES(NULL,"movie1");
-INSERT INTO movies VALUES(NULL,"movie2");
-INSERT INTO movies VALUES(NULL,"movie3");
-INSERT INTO movies VALUES(NULL,"movie4");
-INSERT INTO movies VALUES(NULL,"movie5");
+
+INSERT INTO movies (movie_name) VALUES
+('movie1'),
+('movie2'),
+('movie3'),
+('movie4'),
+('movie5');
